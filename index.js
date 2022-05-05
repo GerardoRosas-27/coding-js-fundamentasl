@@ -18,21 +18,19 @@ do {
 
 console.log("---------------------------")
 
-var n3 = 1;
-var tabla = 5;
-var imprimeP = "";
-var imprimirHtml = document.getElementById("root");
 
-console.log("lement: ", imprimirHtml);
+var n3 = 1;
 
 do {
-    var result = n3 * tabla;
-    console.log("resultado: " + n3 + " X " + tabla + " = " + result );
-    imprimeP = imprimeP + "<p>" + n3 + " X " + tabla + " = " + result + "</p>";
+    for (var index = 1; index < 11; index++) {
+        var result = index * n3;
+        console.log("resultado: " + index + " X " + n3 + " = " + result );
+    }
+    console.log("-----")
     n3 = n3 + 1;
 } while (n3 < 11);
-console.log("etiquetas p: ", imprimeP);
-imprimirHtml.innerHTML = imprimeP;
+
+
 
 
 
