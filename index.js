@@ -30,6 +30,51 @@ do {
     n3 = n3 + 1;
 } while (n3 < 11);
 
+console.log("---------------------------");
+
+try {
+    //throw XPathExpression
+    funcionFantasma();
+    console.log("exito ejecutando");
+} catch (error) {
+    console.error("este es un error",error);
+}
+
+finally {
+    console.log("siempre se ejecuta");
+}
+
+console.log("---------------------------");
+//var varArray = {}
+               // posición del valor
+              //[ 0 , 1 , 2, 3, 4, 5, 6, 7, 8, 9 ]
+ var varArray = [ 1 , 2 , 3, 4, 5, 6, 7, 8, 9, 10 ];
+console.log("es un arreglo: ", varArray);
+console.log("valor: ", varArray[0]);
+
+// agrega el final
+varArray.push(11);
+//lo agrega al principio
+varArray.unshift("primero");
+                                // = 10
+for (var index = 0; index <  varArray.length; index++) {
+                          //[0]
+    var element = varArray[index];
+    console.log("valor: ", element);
+}
+//varArray[0] = -1;  
+
+console.log("es un arreglo: ", varArray);
+
+
+
+
+
+
+
+
+
+
 
 
 
